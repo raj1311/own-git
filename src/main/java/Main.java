@@ -13,7 +13,7 @@ public class Main {
 
      switch (command) {
        case "init" -> {
-         final File root = new File("test/.git");
+         final File root = new File(".git");
          new File(root, "objects").mkdirs();
          new File(root, "refs").mkdirs();
          final File head = new File(root, "HEAD");
